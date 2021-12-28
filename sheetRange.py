@@ -148,7 +148,7 @@ def plotTargetsheet(ts, pinfo):
             #image_path = bulletImage
             #fig, ax = plt.subplots()
             
-            #imscatter(x, y, bulletImage, zoom=0.2, ax=ax) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
+            imscatter(x, y, bulletImage, zoom=0.2, ax=ax) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
             #ax.plot(x, y,zorder=15, alpha=0.5) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
             #plt.scatter(x,y,color="red", marker="x", linewidths=8) # ***** USE THIHS LINE FOR CRANKY CA ****, COMMENT OUT FOR AAZ SERVER AND TESTING
 
@@ -273,15 +273,7 @@ def plotTargetsheet(ts, pinfo):
         setSpine(ax,'none')
         ax.spines['right'].set_color(spinecolor)
         ax.spines['left'].set_color(spinecolor)
-        '''
-        plt.title('Angry AZ Range')
 
-    
-        title_obj = plt.title('Angry AZ Bombing Range') #get the title property handler
-        plt.getp(title_obj)                    #print out the properties of title
-        plt.getp(title_obj, 'text')            #print out the 'text' property for title
-        plt.setp(title_obj, color='g')         #set the color of title to red       
-        '''
         #plt.legend()# giving an error when commenting out the plt.show
         #plt.show() #by commmenting this out, image is being saved but not opening up in python plot window. Not sure why windown doesn't open in trapsheet.py, but for whatever reason need this commented out.
   
@@ -314,7 +306,7 @@ def plotTargetsheet(ts, pinfo):
             #image_path = craterImage
             #fig, ax = plt.subplots()
             
-            #imscatter(x, y, craterImage, zoom=0.2, ax=ax) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
+            imscatter(x, y, craterImage, zoom=0.2, ax=ax) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
             #ax.plot(x, y,zorder=15, alpha=0.5) # ***** USE THIHS LINE FOR AAZ SERVER AND TESTING ****, COMMENT OUT FOR CRANKY CA
             #plt.scatter(x,y,color="red", marker="x", linewidths=8) # ***** USE THIHS LINE FOR CRANKY CA ****, COMMENT OUT FOR AAZ SERVER AND TESTING
             
